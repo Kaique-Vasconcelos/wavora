@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WAVORA - Página Principal</title>
+  <link rel="stylesheet" href="/CSS/RepCss3.css">
+</head>
+<body>
+
+  <!-- ======== MENU LATERAL ======== -->
+  <div class="sidebar">
+    <div>
+      <div class="logo">Wavora</div>
+      <div class="menu">
+        <button id="inicioBtn">🏠 Início</button>
+        <button id="bibliotecaBtn">📚 Biblioteca</button>
+        <button id="curtidasBtn">💜 Músicas Curtidas</button>
+        <button id="pesquisarBtn">🔍 Pesquisar</button>
+        <button id="logoutBtn" onclick="fazerLogout()" class="logout-btn" style="display:none;">
+  <span>Logout</span> 🚪
+</button>
+<div id="localBox">
+    <div class="pulseIcon">📍</div>
+    <p id="localizacaoUsuario">Detectando localização...</p>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== ÁREA PRINCIPAL ======== -->
+  <div class="main-content" id="conteudo">
+    <!-- O JS vai preencher aqui -->
+  </div>
+
+
+ <div id="playerFixo">
+  <img id="playerCapa" src="/imagens/default.png" alt="Capa">
+
+  <div class="player-info">
+    <h3 id="playerTitulo">Selecione uma música</h3>
+    <p id="playerArtista">—</p>
+
+    <div class="player-tempo-container">
+        <span id="tempoAtual">0:00</span>
+
+        <!-- ÚNICA BARRA DE PROGRESSO -->
+        <input type="range" id="barraProgresso" value="0" min="0" max="100">
+
+        <span id="tempoTotal">0:00</span>
+    </div>
+  </div>
+
+  <button id="playPauseBtn">▶️</button>
+  <audio id="audioPlayer"></audio>
+</div>
+<script src="/js/principaljs.js"></script>
+<script src="/js/java.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+/* ==== Estilos gerais ==== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #1e1e1e, #3a0ca3);
+  color: white;
+  min-height: 100vh;
+  padding: 0;
+
+}
+
+header {
+  background: #111;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  color: #a855f7;
+}
+
+
+button:hover {
+  background-color: #7e22ce;
+}
+
+main {
+ 
+  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+  margin-top: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 220px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+
+
+/* Estilo da caixa onde o formulário está */
+.box {
+    width: 300px;
+	height:400px;
+    padding: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: black;
+  
+
+
+}
+
+/* Título do formulário */
+.box h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Estilo para os campos de entrada */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 2px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: white;
+}
+
+/* Foco nos campos de entrada */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover no botão */
+button:hover {
+    background-color: #45a049;
+}
+
+/* Adicionando um espaçamento extra no formulário */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels do formulário */
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.icones
+{
+	background-color:white;
+	
+}
